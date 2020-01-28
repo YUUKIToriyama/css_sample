@@ -6,7 +6,8 @@
 		<link rel="stylesheet" href="stylesheet.css">
 	</head>
 	<body>
-		<main id="displayField">
+		<main>
+			<div id="displayField">
 			<p class="word">あ</p>
 			<p class="word">こ</p>
 			<p class="word">ん</p>
@@ -15,6 +16,19 @@
 			<p class="word">は</p>
 			<p class="word">A</p>
 			<p class="word">あいうえお</p>
+			</div>
+			<div id="control">
+				<input type="range" name="opacityControl" id="opacityControl" value="1" min="0" max="1" step="any">	
+				<span class="tips">Drag!</span>
+			</div>
+			<a class="scrollBtn" href="#details"><span></span></a>
+			<div id="details">
+				<h1>TextGenerator</h1>
+				<p>すきな文章を入れてみよう</p>
+				<form method="post">
+					<textarea name="userSentence" id="userSentence" rows="8" cols="40"></textarea>
+				</form>
+			</div>	
 		</main>
 	</body>
 

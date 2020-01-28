@@ -2,7 +2,7 @@
 
 var field = document.getElementById("displayField");
 
-const str = "きょうは２０２０年１月２８日かようびです";
+//const str = "きょうは２０２０年１月２８日かようびです";
 
 str.split("").forEach(w => {
 	displayWord(w);
@@ -13,4 +13,13 @@ function displayWord(word) {
 	planeText.setAttribute("class", "word");
 	planeText.textContent = word;
 	field.appendChild(planeText);
+}
+
+function coinToss() {
+	let v = Math.random();
+	if (v > 0.5) {
+		return true;
+	} else {
+		return false;
+	}
 }
