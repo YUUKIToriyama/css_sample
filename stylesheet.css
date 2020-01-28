@@ -1,0 +1,13 @@
+/* stylesheet.css */
+
+.word {
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	float: left;
+	margin: 5px;
+	font-size: 40pt;
+	overflow: hidden;
+	text-align: center;
+}
+
